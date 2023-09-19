@@ -5,7 +5,7 @@ Comprobamos que la imagen está en nuestro equipo con `docker image ls`.
 
 2. Crea un contenedor sin ponerle nombre. ¿está arrancado? Obtén el nombre.
 
-
+Con `docker run ubuntu` arrancamos un contenedor ubuntu sin nombre. Para obtener el nombre usamos el comando `docker ps` que nos permite ver la lista de contenedores en ejecución. Para ver los que ya no están en	ejecución añadiremos el parámetro `-a`.
 
 3. Crea un contenedor con el nombre 'dam_ubu1'. ¿Como puedes acceder a él?
 
