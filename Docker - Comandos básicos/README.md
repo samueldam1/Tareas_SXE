@@ -11,6 +11,8 @@ Con `docker run ubuntu` arrancamos un contenedor ubuntu sin nombre. Para obtener
 
 Añadiendo el parámetro `-it` a `docker run` nos permitirá interactuar con el contenedor. 
 
+El comando final quedaría tal que así `docker run -it --name dam_ubu1 ubuntu bash`.
+
 4. Comprueba que ip tiene y si puedes hacer un ping a google.com
 
 Para esto necesitamos instalar `iputils-ping` (lo haremos con el comando `apt install iputils-ping`). 
@@ -23,7 +25,7 @@ Necesitamos instalar primero `net-tools` (lo haremos con el comando `apt install
 
 6. Sal del terminal, ¿que ocurrió con el contenedor?
 
-
+Al salir del terminal los contendores se paran. Para poder visualizarlos tendremos que añadir el parámetro `-a` al comando `docker ps -a`.
 
 7. ¿Cuanta memoria en el disco duro ocupaste?
 
