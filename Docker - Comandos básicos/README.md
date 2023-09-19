@@ -35,4 +35,7 @@ Podremos volver a levantarlos con el comando `docker start 'nombre-del-container
 
 8. ¿Cuanta RAM ocupan los contenedores? ¿Hay algún comando docker para saber esto?.
 
-
+|CONTAINER ID | NAME     | CPU % | MEM USAGE | LIMIT | MEM % | NET I/O     | BLOCK I/O | PIDS |
+|-------------|----------|-------|--------|----------|-------|-------------|-----------|------|
+|2f5783bfd699 | dam_ubu2 | 0.00% | 876KiB | 15.39GiB | 0.01% | 5.41kB / 0B | 0B / 0B   | 1    |
+|8694323c23fd | dam_ubu1 | 0.00% | 884KiB | 15.39GiB | 0.01% | 5.67kB / 0B | 0B / 0B   | 1    |
