@@ -19,7 +19,7 @@ Una vez instalado en el contenedor haremos ping a "google.com" con el comando `p
 
 5. Crea un contenedor con el nombre 'dam_ubu2'. ¿Puedes hacer ping entre los contenedores?
 
-Necesitamos instalar primero `net-tools` (`apt install net-tools`) y usar el comando `ifconfig` para saber la ip de nuestros contendores.
+Necesitamos instalar primero `net-tools` (lo haremos con el comando `apt install net-tools`) y usar el comando `ifconfig` para saber la ip de nuestros contendores.
 
 6. Sal del terminal, ¿que ocurrió con el contenedor?
 
