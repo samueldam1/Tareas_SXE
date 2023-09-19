@@ -9,7 +9,7 @@ Con `docker run ubuntu` arrancamos un contenedor ubuntu sin nombre. Para obtener
 
 3. Crea un contenedor con el nombre 'dam_ubu1'. ¿Como puedes acceder a él?
 
-
+Añadiendo el parámetro `-it` a `docker run` nos permitirá interactuar con el contenedor. 
 
 4. Comprueba que ip tiene y si puedes hacer un ping a google.com
 
