@@ -25,7 +25,9 @@ Necesitamos instalar primero `net-tools` (lo haremos con el comando `apt install
 
 6. Sal del terminal, ¿que ocurrió con el contenedor?
 
-Al salir del terminal los contendores se paran. Para poder visualizarlos tendremos que añadir el parámetro `-a` al comando `docker ps -a`.
+Al salir del terminal los contendores se paran pero no se borran. Para poder visualizarlos tendremos que añadir el parámetro `-a` al comando `docker ps`.
+
+Podremos volver a levantarlos con el comando `docker start 'nombre-del-container'`.
 
 7. ¿Cuanta memoria en el disco duro ocupaste?
 
