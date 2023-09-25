@@ -1,5 +1,11 @@
 1. Descarga la imagen 'httpd' y comprueba que está en tu equipo.
+
+        Descargamos la imagen en nuestro equipo con el comando 'docker image pull httpd:2.4'. En nuestro caso usaremos el tag "2.4" pero por default viene el tag "latest".
+
 2. Crea un contenedor con el nombre 'dam_httpd'.
+
+        Con el comando 'docker run --name dam_httpd' creamos el contenedor con el nombre que querramos.
+
 3. Mapea el puerto 80 del contenedor con el puerto 8000 de tu máquina.
 4. Utiliza bind mount para que el directorio del apache2 'htdocs' este montado un directorio que tu elijas.
 
@@ -13,4 +19,3 @@
         http://localhost:9080
         http://localhost:8000
 11. Tienen que salir la misma página web
-
