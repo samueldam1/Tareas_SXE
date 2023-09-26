@@ -7,6 +7,9 @@
         Con el comando 'docker run --name dam_httpd' creamos el contenedor con el nombre que querramos.
 
 3. Mapea el puerto 80 del contenedor con el puerto 8000 de tu máquina.
+
+        En el 'docker run' deberemos añadir el parámetro '-p 8080:80'.
+
 4. Utiliza bind mount para que el directorio del apache2 'htdocs' este montado un directorio que tu elijas.
 
         Utiliza -v "$PWD"/htdocs:/usr/local/apache2/htdocs/
