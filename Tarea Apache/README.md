@@ -15,6 +15,9 @@ En el `docker run` deberemos añadir el parámetro `-p 8080:80`.
 Para esto debemos añadir a nuestro `docker run` el parámetro `-v "$PWD"/htdocs:/usr/local/apache2/htdocs/`
 
 5. Realiza un 'hola mundo' en html (usa Code) y comprueba que accedes desde el navegador.
+
+Crearemos un fichero en nuestra máquina con nombre 'index.html' en la carpeta htdocs y crearemos una etiqueta 'h1' cuyo contenido sea 'hola mundo'.
+
 6. Crea otro contenedor 'dam_web2' con el mismo volumen y a otro puerto, por ejemplo 9080.
 7. Comprueba que los dos servidores 'sirven' la misma página, es decir, cuando consultamos en el navegador:
         http://localhost:9080 
