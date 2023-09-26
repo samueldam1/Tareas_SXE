@@ -12,7 +12,7 @@ En el `docker run` deberemos añadir el parámetro `-p 8080:80`.
 
 4. Utiliza bind mount para que el directorio del apache2 'htdocs' este montado un directorio que tu elijas.
 
- Utiliza -v "$PWD"/htdocs:/usr/local/apache2/htdocs/
+Para esto debemos añadir a nuestro `docker run` el parámetro `-v "$PWD"/htdocs:/usr/local/apache2/htdocs/`
 
 5. Realiza un 'hola mundo' en html (usa Code) y comprueba que accedes desde el navegador.
 6. Crea otro contenedor 'dam_web2' con el mismo volumen y a otro puerto, por ejemplo 9080.
