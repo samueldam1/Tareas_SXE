@@ -19,7 +19,13 @@ Para esto debemos añadir a nuestro `docker run` el parámetro `-v "$PWD"/htdocs
 Crearemos un fichero en nuestra máquina con nombre 'index.html' en la carpeta htdocs y crearemos una etiqueta 'h1' cuyo contenido sea 'hola mundo'.
 
 6. Crea otro contenedor 'dam_web2' con el mismo volumen y a otro puerto, por ejemplo 9080.
+
+Usaremos el comando `docker run -dit --name dam_web2 -p 9080:80 -v "$PWD":/usr/local/apache2/htdocs/ httpd:2.4`.
+
 7. Comprueba que los dos servidores 'sirven' la misma página, es decir, cuando consultamos en el navegador:
-        http://localhost:9080 
-        http://localhost:8000
+
+Ambos muestran los mismo. "HOLA MUNDO".
+
 8. Realiza modificaciones de la página y comprueba que los dos servidores 'sirven' la misma página
+
+Modificando el archivo 'index.html' para que muestre "ADIOS MUNDO" cambia lo mostrado en el navegador.
